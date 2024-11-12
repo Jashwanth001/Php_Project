@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    color: black;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Add these styles to manage the responsive navigation */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    
+}
+
+
+#details h1:hover{
+    color: orange;
+}
+
+#projects h1:hover{
+    color: orange;
+}
+
+#certificate h1:hover{
+    color: orange;
+}
+
+#skills h1:hover{
+    color: orange;
+}
+
+#contact h1:hover{
+    color: orange;
+}
+
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.nav-toggle {
+    display: none; /* Hide initially on larger screens */
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background-color: black;
+        z-index: 1000;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* Add other styles as per your existing CSS */
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.hov a:hover {
+    background-color: orange;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.home {
+    text-align: center;
+    padding: 20px;
+}
+
+.details h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.details span {
+    color: orange;
+}
+
+.details p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.details a {
+    display: inline-block;
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.one{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.picture img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.picture img:hover {
+    transform: scale(1.1);
+}
+
+section {
+    margin: 50px 0;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h2{
+    color: white;
+}
+
+h3 {
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project, .skill {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project h3, .skill h4 {
+    margin: 0 0 10px 0;
+}
+
+.project p, .skill p {
+    margin: 0 0 10px 0;
+}
+
+.project a {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.certificates img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill-bar {
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.skills .skill-level {
+    background-color: orange;
+    color: #fff;
+    text-align: right;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.new a:hover{
+    background-color: orange;
+}
+
+form {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: orange;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: orange;
+}

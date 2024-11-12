@@ -1,0 +1,57 @@
+*{
+    background-color: antiquewhite;
+}
+button{
+    padding:10px;
+    text-align: center;
+}
+input{
+    margin:3px;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: aliceblue;
+}
+label{
+    font-size: 20px;
+    display: inline-block;
+    text-align: left;
+}
+button{
+    margin-top:10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+select{
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+}
+.container-center{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-center button a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.container-center button{
+    margin-left: 35%;
+}
+.hello{
+    color: green;
+    text-align: center;
+}
+.error{
+    color: red;
+    text-align: center;
+}

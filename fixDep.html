@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fixed Deposit | Online Banking Website</title>
+        <link href="../Php/CSS/fixDepCSS.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <script src="../Java Script/fixDepJS.js"></script>
+    </head>
+
+    <body onload="load();">
+        <div id="header">
+            <h1>Yeshwanth Banking Website</h1>
+            <a href="home.php"><img src="../Php/Images/logo.png" alt="Online Banking System"
+                    title="Yeshwanth Banking Website"></a>
+        </div>
+        <div>
+            <h1>Fixed Deposit</h1>
+            <form action="includes/bankdeposit.inc.php" method="POST">
+                <input type="text" name="accno" maxlength="16" placeholder="Enter the Account No.:" onblur="return validAcc();"><br />
+                <input type="number" name="rupee" max="50000" placeholder="Enter the Amount to Deposit:"><br />
+                <label>Enter the Payment Details:</label><br />
+                <select name="cards">
+                    <option value="credit">Credit Card</option>
+                    <option value="debit" selected>Debit Card</option>
+                </select><br />
+                <input type="text" name="cardno" maxlength="16" placeholder="Enter the Card No:" onblur="return validCard();"><br />
+                <input type="text" name="cardname" placeholder="Enter the Name on the Card:"><br />
+                <input type="password" maxlength="3" name="cvv" placeholder="Enter your 3-digit CVV:" onblur="right();"><br />
+                <p id="result"></p>
+                <button type="submit" style="cursor: pointer;">Deposit</button>
+            </form>
+        </div>
+    </body>
+
+</html>

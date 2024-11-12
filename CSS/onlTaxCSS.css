@@ -1,0 +1,12 @@
+@import url("../CSS/homeCSS.css");
+#header{
+    height: 114px;
+}
+#on{
+    height:500px;
+    width:700px;
+    background-image: url(../Images/tax.jpg);
+    border-radius:30px;
+    background-size: 700px 500px;
+    margin:30px auto;
+}
